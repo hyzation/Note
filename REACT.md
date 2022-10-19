@@ -1,5 +1,7 @@
 # REACT
 ### 使用swiper ###
+- **中文博客** https://blog.csdn.net/supming1/article/details/108204052
+- **官英文档** https://swiperjs.com/react
 ```
 //  安装版本：8.0.1
 yarn add swiper
@@ -29,6 +31,8 @@ import 'swiper/css';
     mousewheel={true}   //鼠标滚轮操作
     loop    //头尾衔接
     allowTouchMove={false}  //禁用拖拽
+    direction="vertical"    //滚动方向，默认horizontal 
+
 >
 
     {

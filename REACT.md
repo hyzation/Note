@@ -5,6 +5,9 @@
 npx create-react-app my-app
 cd my-app
 yarn start
+----------
+react-router-dom    //router
+antd    //antd
 ```
 
 ## 使用jsx

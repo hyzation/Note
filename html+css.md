@@ -15,6 +15,15 @@
     -webkit-box-orient: vertical;
 }
 ```
+## 常用文字样式
+```
+{
+    writing-mode: vertical-lr;  //文字竖向排列
+    text-indent: 2em;   //首行缩进
+    text-transform: uppercase;  //全部大写；capitalize首字母大写；lowercase全部小写
+}
+```
+
 ## 深色png变白
 ```
 filter: invert(1) brightness(2);

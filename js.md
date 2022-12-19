@@ -11,3 +11,13 @@ navigator.clipboard.writeText(value).then(() => {
     console.log(value); //value为复制的内容
 });
 ```
+## 获取元素
+```
+document.querySelectorAll('.classname') //获取class为classname的所有元素
+```
+## 获取页面各距离
+```
+let currentH = document.documentElement.clientHeight    //屏幕高度
+let scrollH = document.documentElement.scrollTop    //滚动距顶部距离
+```
+

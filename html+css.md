@@ -6,7 +6,7 @@
 - **title、alt、h1**：title：网站头部标签head下的title,网站名称。alt: 当网络速度很慢，或者图片地址失效的时候，它可以在图片展示的位置上显示该图片的名称。h1：h1标签自带权重“蜘蛛” 认为它最重要，一个页面有且最多只能有一个h1标签，放在该页面最重要的标题上面，如首页的logo上可以加H1标签。副标题用 标签, 而其它地方不应该随便乱用 h 标题标签。
 
 ## web端适配移动端
-宽高字体使用px转vw，如1920宽屏使用 100/1920*px；
+宽高字体使用px转vw，如1920宽屏，某元素的长度为24px，使用 100/1920*24；
 或meta标签
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +28,12 @@
     writing-mode: vertical-lr;  //文字竖向排列
     text-indent: 2em;   //首行缩进
     text-transform: uppercase;  //全部大写；capitalize首字母大写；lowercase全部小写
+    -moz-user-select: none;  //所属元素的文字不可选中；下同理
+    -webkit-user-select: none;
+    user-select: none;
 }
 ```
-## 字体撑满元素两边
+## 文字撑满元素（类似flex布局的space-between）
 ```
   .kidp3 {
     width: 250px;
@@ -99,4 +102,9 @@ filter: invert(1) brightness(2);
     /* hover上去后的滚动条背景样式 */
     background-color: #eee;
 }
+```
+## 元素选择
+```
+//选择元素中除最后一个之外的所有子元素
+element:not(:last-child) { }
 ```

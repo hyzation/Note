@@ -19,3 +19,8 @@ text{
     font-family: qiantubifeng;
 }
 ```
+## 打包
+```
+npx next build 
+npx next export
+```

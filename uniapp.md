@@ -11,4 +11,12 @@ scroll-view ::-webkit-scrollbar {
     background: transparent;
 }
 ```
-
+## 页面滚动据顶部距离
+```
+<!-- 生命周期 -->
+onPageScroll(e) {
+    // 传入scrollTop值并触发所有easy-loadimage组件下的滚动监听事件
+    // this.scrollTop = e.scrollTop;
+    console.log(111);
+},
+```

@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-## 文字超出省略... ##
+## 文字超出省略...
 ```
 {
     overflow: hidden;
@@ -20,6 +20,14 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+//只显示一行
+{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 ```
 ## 常用文字样式
@@ -46,8 +54,6 @@
 ```
 autocomplete="off"  //禁止自动填充
 ```
-
-
 ## 深色png变白
 ```
 filter: invert(1) brightness(2);
@@ -107,4 +113,10 @@ filter: invert(1) brightness(2);
 ```
 //选择元素中除最后一个之外的所有子元素
 element:not(:last-child) { }
+```
+## css类选择器逗号、空格、连写的区别
+```
+.name1,.name2 {} // 逗号表示当前元素具备其中一个就会出现效果
+.name1 .name2 {} // 空格表示从属包含关系，前元素的子元素才会出现效果
+.name1,.name2 {} // 连写表示需要同时具备才会出现效果
 ```

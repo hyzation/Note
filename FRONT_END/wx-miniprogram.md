@@ -1,4 +1,7 @@
 # miniprogram
+
+[toc]{level: [2]}
+
 ## 监听设备方向变化事件（类似陀螺仪）
 ```
 wx.onDeviceMotionChange((result) => {

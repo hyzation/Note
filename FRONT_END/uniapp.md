@@ -20,3 +20,9 @@ onPageScroll(e) {
     console.log(111);
 },
 ```
+## 判断是否是ios
+```
+let u = navigator.userAgent;
+let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+console.log(isiOS);
+```

@@ -9,3 +9,9 @@ yarn upgrade-interactive --latest
 yarn upgrade package@version
 # yarn.lock和package.json都会更新，但是会进行版本锁定 "echarts": "4.2.0-rc.2"
 ```
+
+### npm镜像
+CMD
+npm config set rigistry https://registry.npmmirror.com
+npm install -g cnpm --registry=https://registry.npmmirror.com
+回到项目 npm install

@@ -16,11 +16,6 @@ three
 >
 </Canvas>
 ```
-
-
-
-
-
 ## MapControls
 - 像拖拽地图一样的拖拽视角
 ```

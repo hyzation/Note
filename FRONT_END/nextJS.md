@@ -21,7 +21,7 @@ text{
 ```
 ## 打包
 ```
-npx next build 
+npx next build
 npx next export
 ```
 ## 使用swiper时delay: 0,不生效
